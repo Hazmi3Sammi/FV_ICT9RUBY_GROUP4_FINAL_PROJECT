@@ -6,33 +6,94 @@
     <title>My Online Portfolio</title>
     <link rel="icon" href="C:\Users\admin\Downloads\OBMC Logo.png" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            text-align: center;
-            scroll-behavior: smooth;
-        }
-        h1, h2 {
-            margin-top: 30px;
-            color: #fff;
-            background-color: #343a40;
-            padding: 10px;
-            border-radius: 10px;
-            scroll-margin-top: 80px;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 0;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-    </style>
+<style>
+    body {
+        text-align: center;
+        font-family: Courier New, monospace;
+        background: linear-gradient(135deg, #f8cdda 0%, #1d2b64 100%);
+        color: #fff;
+    }
+
+   h1 {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+h2 {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    footer {
+        background-color: #343a40;
+        color: white;
+        padding: 10px 0;
+    }
+
+    .profile-img {
+        width: 310px;
+        height: 220px;
+
+
+    }
+
+    summary {
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .quarter-section {
+        background-color: lightgrey;
+        padding: 10px;
+        margin: 10px auto;
+        width: 90%;
+        max-width: 900px;
+        color: mediumpurple;
+        text-align: center;
+    }
+
+    .quarter-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .image-box {
+        width: 140px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .name {
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .description {
+        color: gray;
+    }
+
+    table {
+        color: #000;
+    }
+</style>
+
 </head>
 <body>
 
@@ -48,11 +109,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navLinks">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About the Students</a></li>
-                <li class="nav-item"><a class="nav-link" href="#q1">Quarter 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#q2">Quarter 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#q3">Quarter 3</a></li>
-                <li class="nav-item"><a class="nav-link" href="#q4">Quarter 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About the Us!</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Quarter Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#next">What's Next</a></li>
                 <li class="nav-item"><a class="nav-link" href="#rate">Rate Us</a></li>
             </ul>
@@ -65,35 +123,92 @@
 </nav>
 
 <div class="container mt-5 pt-5" id="about">
-    <h1>MY ONLINE PORTFOLIO :)</h1>
-    <p>This portfolio shows my project for each quarter of SY 2024–2025. It includes HTML, CSS, Bootstrap, and JavaScript.</p>
+    <div class="container mt-5 pt-5" id="about">
+    <h1>Our Online Profolio :p</h1>
+    <p>This portfolio shows my project for each quarter of SY 2024–2025. It includes HTML, CSS, Bootstrap, and JavaScript and other fun projects made by these people!</p>
 
-    <div class="row justify-content-center align-items-center mt-4">
+<div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
         <div class="col-md-4 text-center">
-            <img src="https://media.istockphoto.com/id/1365601848/photo/portrait-of-a-young-woman-carrying-her-schoolbooks-outside-at-college.jpg?s=612x612&w=0&k=20&c=EVxLUZsL0ueYFF1Nixit6hg-DkiV52ddGw_orw9BSJA="
-                 class="img-fluid rounded" style="max-width: 80%; height: auto; margin-right: -100px;" alt="Student Image">
+            <img src="C:\Users\admin\OneDrive\画像\Screenshots\Screenshot 2025-05-12 210336.png" class="profile-img" alt="Student Image">
         </div>
         <div class="col-md-6">
             <div class="table-responsive">
-                <table class="table table-bordered">
+                <table class="table table-bordered bg-light">
                     <thead class="table-light">
                         <tr>
                             <th colspan="2" class="text-center fw-bold">Profile Information</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
+                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
+                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
+        <div class="col-md-4 text-center">
+            <img src="" class="profile-img" alt="Student Image">
+        </div>
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead class="table-light">
                         <tr>
-                            <th scope="row">Name:</th>
-                            <td>Mr. Student 1</td>
+                            <th colspan="2" class="text-center fw-bold">Profile Information</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
+                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
+                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
+        <div class="col-md-4 text-center">
+            <img src="" class="profile-img" alt="Student Image">
+        </div>
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead class="table-light">
                         <tr>
-                            <th scope="row">Interests/Clubs:</th>
-                            <td>Tiktok, Mobile games, Listening to Music</td>
+                            <th colspan="2" class="text-center fw-bold">Profile Information</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
+                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
+                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
+        <div class="col-md-4 text-center">
+            <img src="" class="profile-img" alt="Student Image">
+        </div>
+        <div class="col-md-6">
+            <div class="table-responsive">
+                <table class="table table-bordered bg-light">
+                    <thead class="table-light">
                         <tr>
-                            <th scope="row">Ambition:</th>
-                            <td><em>"I am dedicated to working hard in high school to earn a spot at MIT, where I can further my passion for innovation and technology and contribute to groundbreaking advancements in science and engineering."</em></td>
+                            <th colspan="2" class="text-center fw-bold">Profile Information</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
+                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
+                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -101,37 +216,119 @@
     </div>
 </div>
 
-<div class="container" id="q1">
-    <h2>Quarter 1 Project</h2>
-    <p>Insert project or file link here.</p>
-</div>
 
-<br><br>
 
-<div class="container" id="q2">
-    <h2>Quarter 2 Project</h2>
-    <p>Insert project or file link here.</p>
-</div>
+<h2>Quarter Projects</h2>
 
-<br><br>
+<details class="quarter-section" id="projects">
+  <summary>1st Quarter</summary>
+  <div class="quarter-images">
+    <div class="image-box">
+      <img src="C:\Users\admin\OneDrive\画像\Screenshots\Screenshot 2025-05-14 074932.png">
+      <div class="name">Ebtisam Al Hazmi</div>
+      <div class="description">Cute Plushies</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371799302137184398/image.png?ex=68247328&is=682321a8&hm=71000544d3806ab5044c067157f0b8e28966a321ef2e192111fab7741d956ad6&=&format=webp&quality=lossless&width=1536&height=864"9>
+      <div class="name">Ethan Belsa</div>
+      <div class="description">Urban night lights</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1278263732878708758/1371801501332144148/image.png?ex=68247534&is=682323b4&hm=c6972da27ff9c2c3ed281b0780a845bfe32e976ebc8c67dcb5ef016b5d13d9a4&=&format=webp&quality=lossless&width=1687&height=864">
+      <div class="name">Ashlei Reodica</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163293491040882759/1371797589132968038/image.png?ex=68247190&is=68232010&hm=e673e25854a4892166cb649477ce27598d16b12684071deaf811e8a66806faed&=&format=webp&quality=lossless&width=1846&height=864">
+      <div class="name">Francis Lilagan</div>
+      <div class="description">description</div>
+    </div>
+  </div>
+</details>
 
-<div class="container" id="q3">
-    <h2>Quarter 3 Project</h2>
-    <p>Insert project or file link here.</p>
-</div>
+<details class="quarter-section">
+  <summary>2nd Quarter</summary>
+  <div class="quarter-images">
+    <div class="image-box">
+      <img src="C:\Users\admin\OneDrive\画像\Screenshots\Screenshot 2025-05-14 074627.png">
+      <div class="name">Ebtisam Al Hazmi</div>
+      <div class="description">Luna Foods</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371795418974781601/image.png?ex=68246f8a&is=68231e0a&hm=345b1a6dc25d1d78a586e1d23d23cd53ce51a8357b98dc69e05f3e383faedfa1&=&format=webp&quality=lossless&width=1811&height=864">
+      <div class="name">Ethan Belsa</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1361587759365619845/1371803594738892800/image.png?ex=68247727&is=682325a7&hm=bcdd29ee062f910e4f069b19f1657347d68e91b3e6e141249ba87f3d580d11ce&=&format=webp&quality=lossless&width=1734&height=864">
+      <div class="name">Ashlei Reodica</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371796950038609932/image.png?ex=682470f7&is=68231f77&hm=00d3e83e06a5e925bacf59c34319062598a055d6027e85b636b8bde5a8b74369&=&format=webp&quality=lossless&width=550&height=280">
+      <div class="name">Francis Lilagan</div>
+      <div class="description">description</div>
+    </div>
+  </div>
+</details>
 
-<br><br>
+<details class="quarter-section">
+  <summary>3rd Quarter</summary>
+  <div class="quarter-images">
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1361587759365619845/1371802749305622579/image.png?ex=6824765e&is=682324de&hm=b59e6a2e9343391c4a7347939a5d9afeef378f5a1d1ee35ad19c4e3bda9a2915&=&format=webp&quality=lossless&width=1741&height=864">
+      <div class="name">Ebtisam Al Hazmi</div>
+      <div class="description">MRT tickets!</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371796606399287326/image.png?ex=682470a5&is=68231f25&hm=8b77582c3b9d723e3c39b50bb02e53436a89d79d4119e6bc1ee209233f1110e3&=&format=webp&quality=lossless&width=1866&height=864">
+      <div class="name">Ethan Belsa</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163151511124189355/1371826712920330270/image.png?ex=68248caf&is=68233b2f&hm=11420cc231ab013738a89d23e2708ae39e862432fba5180f5dc3efaf99672c7e&=&format=webp&quality=lossless">
+      <div class="name">Ashlei Reodica</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371796273820205148/image.png?ex=68247056&is=68231ed6&hm=1de12e5dad1b1079da7a09b77a86c2435d1ccdf3c7433d5004840cbd20aac6b3&=&format=webp&quality=lossless&width=550&height=273">
+      <div class="name">Francis Lilagan</div>
+      <div class="description">description</div>
+    </div>
+  </div>
+</details>
 
-<div class="container" id="q4">
-    <h2>Quarter 4 Project</h2>
-    <p>Insert project or file link here.</p>
-</div>
+<details class="quarter-section">
+  <summary>4th Quarter</summary>
+  <div class="quarter-images">
+    <div class="image-box">
+      <img src="C:\Users\admin\OneDrive\画像\Screenshots\Screenshot 2025-05-14 074159.png">
+      <div class="name">Ebtisam Al Hazmi</div>
+      <div class="description">BMI Cal</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371793395051270194/image.png?ex=68246da8&is=68231c28&hm=44e54a898a27bb2099f4eb79fa807b3737595a5ade10273e24488a995dff12c2&=&format=webp&quality=lossless&width=1813&height=863">
+      <div class="name">Ethan Belsa</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="img3_q4.png">
+      <div class="name">Ashlei Reodica</div>
+      <div class="description">description</div>
+    </div>
+    <div class="image-box">
+      <img src="https://media.discordapp.net/attachments/1163103295917785089/1371795323919401041/image.png?ex=68246f73&is=68231df3&hm=09a84824421a573297a8c240bb8efa78a06d364b57837d58b60fadb00c57576b&=&format=webp&quality=lossless&width=1745&height=864">
+      <div class="name">Francis Lilagan</div>
+      <div class="description">description</div>
+    </div>
+  </div>
+</details>
 
 <br><br>
 
 <div class="container" id="next">
     <h2>What's Next</h2>
-    <p>Next year, I look forward to learning more about web development and building interactive websites using JavaScript frameworks.</p>
+    <p>Next year, I look forward to learning more about web development and building interactive websites using JavaScript frameworks. We look fordward to improve and make new and fun codes for our class and friends !!!</p>
 </div>
 
 <br><br>
