@@ -15,38 +15,56 @@
     }
 
    h1 {
-    margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 2.5rem;
+      margin-top: 10px; /* Reduced space */
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 2.5rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+  }
+    .profile-img {
+            width: 310px;
+            height: 220px;
+            border: 5px solid darkblue;
+            border-radius: 15px; /* Rounded image */
+
 }
 h2 {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 8px 15px;
     border-radius: 10px;
-    font-size: 1.8rem;
+    font-size: 35px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+h3{
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto
 }
 
     footer {
         background-color: #343a40;
         color: white;
-        padding: 10px 0;
     }
 
     .profile-img {
         width: 310px;
         height: 220px;
-
-
+        border: 5px solid darkblue;
     }
 
     summary {
-        font-size: 1.2em;
+        font-size: 2.2em;
         font-weight: bold;
         cursor: pointer;
     }
@@ -69,16 +87,22 @@ h2 {
         gap: 10px;
     }
 
-    .image-box {
+    .image-box img {
         width: 140px;
         margin: 10px;
         text-align: center;
     }
 
-    .image-box img {
-        width: 100%;
-        border-radius: 8px;
-    }
+    img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  30% { transform: translate(3px, 2px) rotate(0deg); 
+}
+
+
 
     .name {
         font-weight: bold;
@@ -88,10 +112,43 @@ h2 {
     .description {
         color: gray;
     }
+    .star-rating {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .star {
+            font-size: 30px;
+            color: gold;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .star {
+            font-size: 30px;
+            color: lightgray;
+            cursor: pointer;
+        }
+        .star:hover,
+        .star.selected {
+            color: gold; 
+        }
+        .chat-box {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+        }
 
-    table {
-        color: #000;
-    }
 </style>
 
 </head>
@@ -103,7 +160,7 @@ h2 {
         <img src="https://media.discordapp.net/attachments/1016322984824279244/1372024918585249863/OBMC_Logo.png?ex=68254547&is=6823f3c7&hm=ef34a661ea3d9c1c24e787845861259dcfab52ab03ac54fd9466120d8993fca0&=&format=webp&quality=lossless&width=650&height=650" style="width: 50px;">
         <br><br>
 
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand">Portfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -116,7 +173,7 @@ h2 {
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search">
-                <button class="btn btn-success" type="submit">Search</button>
+                <button class="btn btn-danger" type="submit">Search</button>
             </form>
         </div>
     </div>
@@ -125,52 +182,71 @@ h2 {
 <div class="container mt-5 pt-5" id="about">
     <div class="container mt-5 pt-5" id="about">
     <h1>Our Online Profolio :p</h1>
+    <br>
     <p>This portfolio shows my project for each quarter of SY 2024–2025. It includes HTML, CSS, Bootstrap, and JavaScript and other fun projects made by these people!</p>
+
 
 <div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
         <div class="col-md-4 text-center">
             <img src="https://media.discordapp.net/attachments/1016322984824279244/1372024964139454625/Screenshot_2025-05-12_210336.png?ex=68254552&is=6823f3d2&hm=56d8dea39ea994aba62cb38aaf48d2a29dbc6a84cd58605c7d448d2884383a97&=&format=webp&quality=lossless&width=626&height=441" class="profile-img" alt="Student Image">
         </div>
-        <div class="col-md-6">
-            <div class="table-responsive">
-                <table class="table table-bordered bg-light">
-                    <thead class="table-light">
-                        <tr>
-                            <th colspan="2" class="text-center fw-bold">Profile Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
-                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
-                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="col-md-6">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover bg-light">
+            <thead class="table-primary">
+                <tr>
+                    <th colspan="2" class="text-center fw-bold">Profile Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Name:</th>
+                    <td class="bg-white">Mrs. Al Hazmi (Sammie)</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Interests/Clubs:</th>
+                    <td class="bg-white">Tiktok, Console games, Listening to Music, Movies</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Ambition:</th>
+                    <td class="bg-white"><em>"I love to spend time with people who value my time and with my friends who make me happy!"</em></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+
+
  <div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
         <div class="col-md-4 text-center">
             <img src="" class="profile-img" alt="Student Image">
         </div>
         <div class="col-md-6">
-            <div class="table-responsive">
-                <table class="table table-bordered bg-light">
-                    <thead class="table-light">
-                        <tr>
-                            <th colspan="2" class="text-center fw-bold">Profile Information</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><th scope="row">Name:</th><td>Mrs. Al Hazmi (Sammie) </td></tr>
-                        <tr><th scope="row">Interests/Clubs:</th><td>Tiktok, Console games, Listening to Music, Movies</td></tr>
-                        <tr><th scope="row">Ambition:</th><td><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover bg-light">
+            <thead class="table-primary">
+                <tr>
+                    <th colspan="2" class="text-center fw-bold">Profile Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Name:</th>
+                    <td class="bg-white">Mrs. Al Hazmi (Sammie)</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Interests/Clubs:</th>
+                    <td class="bg-white">Tiktok, Console games, Listening to Music, Movies</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="bg-white text-primary">Ambition:</th>
+                    <td class="bg-white"><em>"I love to spend time with people who value my time and someone who I love and si Sir Ren <3."</em></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+
 <div class="container mt-4 d-flex flex-wrap justify-content-center align-items-start gap-4">
         <div class="col-md-4 text-center">
             <img src="" class="profile-img" alt="Student Image">
@@ -216,7 +292,7 @@ h2 {
     </div>
 </div>
 
-
+<br><br>
 
 <h2>Quarter Projects</h2>
 
@@ -334,13 +410,28 @@ h2 {
 <br><br>
 
 <div class="container" id="rate">
-    <h2>Rate Us</h2>
-    <p>Rate this website from 1 to 5:</p>
-    <div class="d-flex flex-column align-items-center">
-        <input type="number" id="rating1" min="1" max="5" class="form-control mb-2" style="max-width: 200px;">
-        <input type="number" id="rating2" min="1" max="5" class="form-control mb-2" style="max-width: 200px;">
-        <button onclick="calculateAverage()" class="btn btn-primary mt-2">Submit Rating</button>
-        <p id="result" class="mt-2"></p>
+    <h2>Rate Us for Content</h2>
+    <div class="star-rating">
+        <span class="star" onclick="setContentRating(1)">&#9733;</span>
+        <span class="star" onclick="setContentRating(2)">&#9733;</span>
+        <span class="star" onclick="setContentRating(3)">&#9733;</span>
+        <span class="star" onclick="setContentRating(4)">&#9733;</span>
+        <span class="star" onclick="setContentRating(5)">&#9733;</span>
+    </div>
+    <p id="contentRatingResult">Your rating: 0</p>
+    <h2>Rate Us for Website</h2>
+    <div class="star-rating">
+        <span class="star" onclick="setWebsiteRating(1)">&#9733;</span>
+        <span class="star" onclick="setWebsiteRating(2)">&#9733;</span>
+        <span class="star" onclick="setWebsiteRating(3)">&#9733;</span>
+        <span class="star" onclick="setWebsiteRating(4)">&#9733;</span>
+        <span class="star" onclick="setWebsiteRating(5)">&#9733;</span>
+    </div>
+    <p id="websiteRatingResult">Your rating: 0</p>
+    <div class="chat-box">
+        <h3>Chat Box</h3>
+        <textarea id="chatMessage" class="form-control" rows="4" placeholder="Type your message here..."></textarea>
+        <button class="btn btn-primary mt-2" onclick="submitChat()">Send</button>
     </div>
 </div>
 
@@ -352,9 +443,10 @@ h2 {
     <button type="submit" class="btn btn-success">Submit Comment</button>
 </form>
 
-<br><br>
+<br><br><br>
+
 <div class="container mt-4">
-    <h2>References</h2>
+    <h3>References</h3>
     <p><a href="https://www.investopedia.com/terms/b/bitcoin.asp" target="_blank">Bitcoin Article</a></p>
     <p><a href="https://docs.google.com/" target="_blank">Project Files (Google Docs)</a></p>
 </div>
@@ -376,6 +468,26 @@ h2 {
             document.getElementById("result").innerHTML = "Average Rating: " + average;
         }
     }
+    let contentRating = 0;
+    let websiteRating = 0;
+    function setContentRating(rating) {
+        contentRating = rating;
+        document.getElementById("contentRatingResult").innerText = "Your rating: " + contentRating;
+        // Update the star colors
+        const stars = document.querySelectorAll('.star-rating:nth-of-type(1) .star');
+        stars.forEach((star, index) => {
+            star.classList.toggle('selected', index < rating);
+        });
+    }
+    function setWebsiteRating(rating) {
+        websiteRating = rating;
+        document.getElementById("websiteRatingResult").innerText = "Your rating: " + websiteRating;
+        // Update the star colors
+        const stars = document.querySelectorAll('.star-rating:nth-of-type(2) .star');
+        stars.forEach((star, index) => {
+            star.classList.toggle('selected', index < rating);
+        });
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
